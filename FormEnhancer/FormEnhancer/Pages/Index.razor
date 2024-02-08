@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Form Enhancer</PageTitle>
+
+<h1>
+    Sector Selector
+</h1>
+
+<p>
+    Please enter your name and pick the Sectors you are currently involved in.
+</p>
+<CascadingValue Value="@IsSaved">
+    <CascadingValue Value="@Reply">
+
+        <SuccessAlert />
+
+        <Form OnSaving="SaveReply" Options="@Options" />
+
+        <Table OnEditing="EditReply" Replies="@Replies" />
+
+    </CascadingValue>
+</CascadingValue>

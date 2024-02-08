@@ -1,0 +1,28 @@
+﻿
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th scope="col">Name</th>
+            <th scope="col">Sectors</th>
+            <th scope="col">Agreed to Terms?</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reply in Replies)
+        {
+            <tr>
+                <td @onclick=@(()=>EditRow(reply.Id))>
+                    <button type="button" class="btn btn-link p-0">
+                        Edit
+                    </button>
+                </td>
+                <td>@reply.Name</td>
+                <td>@reply.SectorIds</td>
+                <td>
+                    @(reply.AgreedToTerms ? "Yes" : "No")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

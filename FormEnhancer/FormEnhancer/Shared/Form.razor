@@ -1,0 +1,43 @@
+﻿<EditForm Model="Reply" OnSubmit=@SaveReply>
+    <DataAnnotationsValidator />
+
+    <div class="row mb-3">
+        <label for="inputName" class="col-form-label col-sm-2 text-sm-end"> Name: </label>
+        <InputText id="inputName" @bind-Value=Reply.Name class="col-sm-4" />
+        <ValidationMessage For="() => Reply.Name" />
+    </div>
+
+    <div class="row mb-3">
+        <label for="selectSectors" class="col-form-label col-sm-2 text-sm-end"> Sectors: </label>
+        <InputSelect id="selectSectors"
+                     TValue="int[]"
+                     size="10"
+                     class="col-sm-4"
+                     @bind-Value="Reply.SelectedSectorIds"
+                     @onchange="SelectedSectorIdsChanged"
+                     multiple>
+         
+                     @Options
+
+        </InputSelect>
+        <ValidationMessage For="() => Reply.SelectedSectorIds" />
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4 p-0">
+            <InputCheckbox id="checkboxAgreeToTerms" @bind-Value=Reply.AgreedToTerms class="form-label m-0" />
+            <label for="checkboxAgreeToTerms" class="col-form-check-label col-sm-4">
+                Agree to terms
+            </label>
+        </div>
+        <ValidationMessage For="() => Reply.AgreedToTerms" />
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-2"></div>
+        <input type="submit" class="col-sm-2 btn btn-outline-primary" value="Save" />
+        <button type="button" class="col-sm-2 btn btn-outline-secondary" @onclick="CreateNew">New</button>
+    </div>
+
+</EditForm>
