@@ -1,4 +1,4 @@
-# Form Enhancer
+# Form Enhancer in Blazor
 
 ## Overview
 Created and presented in 10.2022.
