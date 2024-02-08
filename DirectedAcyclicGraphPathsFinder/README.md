@@ -3,6 +3,7 @@
 ## Overview
 
 Created and presented in 11.2023.
+
 This project contains a C# class designed to compute all possible paths between two vertices in a given acyclic directed graph. The graph is represented as vertex pairs, with vertices denoted by random integers. The core functionality of this class is to analyze the graph, provided in the form of a `List<Tuple<int, int>>`, where each `Tuple<int, int>` signifies a directed edge from the first element of the tuple to the second. The objective is to return all possible paths between any two specified vertices in a `List<List<int>>` format.
 
 ## Graph Representation
