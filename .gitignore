@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs
+/IoTConnectHub/MyIoTService/appsettings.Development.json
+/IoTConnectHub/MyIoTService/appsettings.json
