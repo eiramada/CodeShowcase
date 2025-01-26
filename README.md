@@ -12,7 +12,7 @@ This repository contains a curated collection of projects that demonstrate my sk
   - Representation of graphs using a list of tuples.
   - Efficient path-finding for acyclic directed graphs.
   - Returns results in a nested list format for easy analysis.
-- **Technologies:** C#, .NET 5
+- **Technologies:** C#, .NET 7.0
 - **Worked on:** November 2023
 
 ---
@@ -48,7 +48,7 @@ This repository contains a curated collection of projects that demonstrate my sk
   - Client-side and server-side validation for form submissions.
   - Data persistence in a SQL Server database.
   - Session-based editing for previously submitted form data.
-- **Technologies:** C#, Blazor, .NET 5, SQL Server
+- **Technologies:** C#, Blazor, .NET 6, SQL Server
 - **Worked on:** October 2022
 
 
